@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Input Patterns</title>
+<style type='text/css'>
+body
+{
+  background-color:lightblue;
+  color:darkgreen;
+}
+</style>
+</head>
+<body>
+  <h1>Create an Account</h1>
+  <form method="post">
+    <p>*required</p>
+    <p>* Enter your first name:<input name='firstname' type='text'></p>
+    <p>* Enter your last name:<input name='lastname' type='text'></p>
+    <p>* Enter your age(13-100):<input min='13' max='100' name='age' type='number'></p>
+    <p>* Enter your username(letters and numbers only):
+      <input name='username' pattern="[a-zA-Z0-9]+" type='text'>
+    </p>
+    <p>* (NOT REAL. BE VERY CAUTIOUS ABOUT STORING CREDIT CARD INFO.)
+      Enter your credit card info (JUST ENTER 14-16 RANDOM NUMBERS)
+    </p>
+    <p><input name='creditcard' pattern="[0-9]{14,16}" type='text'></p>
+    <p>* Enter your password<br>(8-64 characters)<br>(Upper case, lower case and 1 digit)<br>
+    <input name='password' type='password'
+    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,64}'>
+    </p>
+    <p><button type='submit'>Submit</button></p>
+  </form>
+</body>
+</html>

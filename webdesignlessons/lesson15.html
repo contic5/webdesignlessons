@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Input Ranges</title>
+<style type='text/css'>
+body
+{
+  background-color:lightblue;
+  color:darkgreen;
+}
+</style>
+</head>
+<body>
+  <h1>Create an Account</h1>
+  <form method="post">
+    <p>*required</p>
+    <p>* Enter your first name:<input name='firstname' type='text'></p>
+    <p>* Enter your last name:<input name='lastname' type='text'></p>
+    <p>* Enter your age(13-100):<input min='13' max='100' name='age' type='number'></p>
+    <p>* Enter your username:<input name='username' type='text'></p>
+    <p>* Enter your password(8-64 characters):<input name='password' minlength='8' maxlength='64' type='password'></p>
+    <p><button type='submit'>Submit</button></p>
+  </form>
+</body>
+</html>

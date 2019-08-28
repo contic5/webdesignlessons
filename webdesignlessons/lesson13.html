@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forms</title>
+<style type='text/css'>
+body
+{
+  background-color:lightblue;
+  color:darkgreen;
+}
+</style>
+</head>
+<body>
+  <h1>Create an Account</h1>
+  <form method="post">
+    <p>Enter your first name:<input name='firstname' type='text'></p>
+    <p>Enter your last name:<input name='lastname' type='text'></p>
+    <p>Enter your birthday:<input name='birthday' type='date'></p>
+    <p>Enter your computer skill: <br>
+      <input name='skill' type='radio' value='low'>Low Experience
+      <input name='skill' type='radio' value='moderate'>Moderate Experience
+      <input name='skill' type='radio' value='high'>High Experience
+    </p>
+    <p>Enter your username:<input name='username' type='text'></p>
+    <p>Enter your password:<input name='password' type='password'></p>
+    <p>Enter preferred volume:<br>
+    0<input name="volume" type="range" min="0" max="100" step="1">100
+    <p>
+      Enter your home state:
+      <select name='state'>
+        <option value='NJ'>New Jersey</option>
+        <option value='NH'>New Hampshire</option>
+        <option value='PA'>Pensylvania</option>
+        <option value='VA'>Virginia</option>
+        <option value='RI'>Rhode Island</option>
+      </select>
+    </p>
+    <p>I would like to receive emails<input name='receiveemails' type='checkbox'></p>
+    <p>Why did you come to this website?</p>
+    <p>
+    <textarea name="testimony" rows="8" cols="80"></textarea>
+    </p>
+    <p><button type='submit'>Submit</button></p>
+  </form>
+</body>
+</html>
